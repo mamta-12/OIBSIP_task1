@@ -1,53 +1,74 @@
-*{
-    padding: 0;
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
     margin: 0;
-    font-family: 'poppins', sans-serif;
- }
- body{
-    background-color:aqua;
-    display: grid;
-    height: 100vh;
-    place-items: center;
- }
- .main{
-    width: 400px;
-    height: 450px;
-    background-color: rgb(40, 18, 135);
-    position: absolute;
-    border: 5px solid rgb(206, 195, 148);
-    border-radius: 6px;
- }
- .main input[type='text'] {
-    width: 88%;
-    position: relative;
-    height: 80px;
-    top: 5px;
-    text-align: right;
-    padding: 3px 6px;
-    outline: none;
+    padding: 0;
+  background-color:rgb(108, 195, 221); 
+  }
+  
+  h2 {
     font-size: 40px;
-    border: 5px solid rgb(187, 117, 117);
-    display: flex;
-    margin: auto;
-    border-radius: 6px;
+    font-weight: bold;
     color: black;
- }
- .btn input[type='button']{
-    width:90px;
-    padding: 2px;
-    margin: 2px 0px;
-    position: relative;
-    left: 13px;
-    top: 20px;
-    height: 60px;
+    margin:  70px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(118, 78, 210); 
+  
+  }
+  
+  .container {
+    max-width: 500px;
+    margin:  auto;
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 30px ;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 3px;
+  }
+  
+  button {
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 18px;
-    transition: 0.5s;
-    background-color: rgb(202, 94, 94);
-    border-radius: 6px;
-    color: rgb(150, 212, 152);
- }
- .btn input[type='button']:hover{
-    background-color: rgb(132, 48, 48);
-    color: rgb(155, 198, 74);
- }
+  }
+  
+  button:hover {
+    background-color: rgb(139, 88, 197);
+  }
+  
+  li {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(154, 125, 233);
+    border: 1px solid rgb(246, 124, 132);
+    padding: 10px;
+    border-radius: 4px;
+    position: justify;
+  }
+  
+  li .delete-btn {
+    background-color: #f44336;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: justify;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-5%);
+  }
